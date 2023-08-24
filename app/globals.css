@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-height: 800px) {
+  body {
+    background-color: red;
+  }
+}
