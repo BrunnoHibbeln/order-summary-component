@@ -1,7 +1,7 @@
-import { Red_Hat_Display } from 'next/font/google'
+import { Red_Hat_Display as redHatDisplay } from 'next/font/google'
 import './globals.css'
 
-const redHat = Red_Hat_Display({
+const redHat = redHatDisplay({
   subsets: ['latin'],
   variable: '--font-red-hat',
 })
