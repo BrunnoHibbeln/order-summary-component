@@ -1,7 +1,10 @@
+import { Red_Hat_Display } from 'next/font/google'
 import './globals.css'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const redHat = Red_Hat_Display({
+  subsets: ['latin'],
+  variable: '--font-red-hat',
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${redHat.variable} xs:bg-desktop flex h-screen flex-col items-center justify-center bg-pale-blue bg-mobile bg-contain bg-no-repeat font-red-hat`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
