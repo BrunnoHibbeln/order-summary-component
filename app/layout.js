@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${redHat.variable} xs:bg-desktop flex h-screen flex-col items-center justify-center bg-pale-blue bg-mobile bg-contain bg-no-repeat font-red-hat`}
+        className={`${redHat.variable} flex h-screen flex-col items-center justify-center bg-pale-blue bg-mobile bg-contain bg-no-repeat font-red-hat xs:bg-desktop`}
       >
         {children}
       </body>
